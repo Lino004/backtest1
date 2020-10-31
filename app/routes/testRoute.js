@@ -1,6 +1,6 @@
-import express from 'express';
+const express = require('express');
 
-import { createTest } from '../controllers/testController';
+const { createTest } = require('../controllers/testController');
 
 const router = express.Router();
 
@@ -8,4 +8,4 @@ const router = express.Router();
 
 router.post('/test', createTest);
 
-export default router;
+module.exports = router;

@@ -10,6 +10,6 @@ const createTest = async (req, res) => {
 
 
 
-export {
+module.exports = {
   createTest,
 };

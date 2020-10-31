@@ -1,8 +1,7 @@
-import express from 'express';
-import 'babel-polyfill';
-import cors from 'cors';
-import env from './env';
-import testRoute from './app/routes/testRoute';
+const express = require('express');
+const cors = require('cors');
+const env = require('./env');
+const testRoute = require('./app/routes/testRoute');
 
 const app = express();
 
@@ -20,4 +19,4 @@ app.listen(env.port).on('listening', () => {
 });
 
 
-export default app;
+module.exports = app
